@@ -8,11 +8,11 @@
 <h1 align="center">Login page</h1> <br>
 <p align="left"><img src="https://github.com/zilsh1/Expense-Tracker/blob/master/screenshot/Screenshot%202025-10-28%20223351.png" /></p> <br>
 
-<h1 align="center">Profile page</h1> <br>
-<p align="left"><img src="https://github.com/zilsh1/mern-estates/blob/main/Screenshots/Screenshot%202025-02-04%20192055.png" /></p> <br>
+<h1 align="center">Home page</h1> <br>
+<p align="left"><img src="https://github.com/zilsh1/Expense-Tracker/blob/master/screenshot/Screenshot%202025-10-28%20224142.png" /></p> <br>
 
-<h1 align="center">Editing listing</h1> <br>
-<p align="left"><img src="https://github.com/zilsh1/mern-estates/blob/main/Screenshots/Screenshot%202025-02-04%20192110.png" /></p> <br>
+<h1 align="center">Categories page</h1> <br>
+<p align="left"><img src="https://github.com/zilsh1/Expense-Tracker/blob/master/screenshot/Screenshot%202025-10-28%20224154.png" /></p> <br>
 
-<h1 align="center">Description of listing</h1> <br>
-<p align="left"><img src="https://github.com/zilsh1/mern-estates/blob/main/Screenshots/Screenshot%202025-02-04%20193238.png" /></p> <br>
+<h1 align="center">Transactions page</h1> <br>
+<p align="left"><img src="https://github.com/zilsh1/Expense-Tracker/blob/master/screenshot/Screenshot%202025-10-28%20224206.png" /></p> <br>
