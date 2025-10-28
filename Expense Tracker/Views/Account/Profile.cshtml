@@ -1,0 +1,53 @@
+﻿@model Expense_Tracker.Models.User
+
+@{
+    ViewData["PageTitle"] = "My Profile";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+        <div class="widget p-5" style="background-color:#212b36">
+            <h4 class="mb-4 text-white text-center">Profile</h4>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-success">@ViewBag.Message</div>
+            }
+
+            <form asp-action="Profile" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="UserId" />
+
+                <div class="mb-4 text-center">
+                    <label class="form-label text-white d-block mb-2">Profile Image</label>
+                    <img src="~/uploads/@Model.ProfileImage"
+                         alt="Profile"
+                         class="img-thumbnail rounded-circle mb-3"
+                         style="width:150px; height:150px; object-fit:cover;" />
+                    <input type="file" name="ProfileImageFile" class="form-control mt-2" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Password</label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

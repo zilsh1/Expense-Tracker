@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+        <div class="widget p-5" style="background-color:#212b36">
+            <h4 class="mb-4 text-white text-center">Login</h4>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            <form asp-action="Login" method="post">
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label class="form-label text-white">Email</label>
+                    <input name="email" class="form-control" required />
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-3">
+                    <label class="form-label text-white">Password</label>
+                    <input name="password" type="password" class="form-control" required />
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+                <!-- Link to Register -->
+                <p class="text-center text-white mt-3">
+                    Don't have an account? <a href="/Account/Register" class="text-decoration-underline">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
